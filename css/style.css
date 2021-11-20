@@ -537,6 +537,7 @@ input:focus {
 }
 
 .hotel-info__description {
+  max-width: 100%;
   margin: 5px 0;
 }
 
@@ -557,6 +558,7 @@ input:focus {
 }
 
 .hotel-description {
+  max-width: 392px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -690,6 +692,9 @@ input:focus {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+  }
+  .hotel-info__description {
+    max-width: 280px;
   }
 }
 
