@@ -510,8 +510,8 @@ input:focus {
 }
 
 .hotel {
-  padding-top: 23px;
-  padding-bottom: 35px;
+  padding-top: 14px;
+  padding-bottom: 70px;
 }
 
 .hotel-info {
@@ -537,8 +537,8 @@ input:focus {
 }
 
 .hotel-info__description {
+  margin: 0;
   max-width: 100%;
-  margin: 5px 0;
 }
 
 .hotel-name {
@@ -578,6 +578,7 @@ input:focus {
 }
 
 .rating {
+  margin-top: 10px;
   max-width: 65px;
   min-height: 45px;
   text-align: center;
@@ -595,6 +596,12 @@ input:focus {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-small {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
@@ -615,15 +622,14 @@ input:focus {
     padding-bottom: 30px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 21px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 48px;
   }
   .search__input {
     width: 340px;
@@ -633,7 +639,7 @@ input:focus {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: %;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -699,8 +705,15 @@ input:focus {
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
+  .container {
+    max-width: 90%;
+    padding-left: 10px;
+  }
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
