@@ -757,7 +757,6 @@ input:focus {
 @media (min-width: 320px) and (max-width: 576px) {
   .container {
     max-width: 90%;
-    padding-left: 10px;
   }
   .logo {
     width: 99px;
