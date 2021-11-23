@@ -800,7 +800,7 @@ input:focus {
     height: 178px;
   }
   .slider {
-    height: 178px;
+    height: 100%;
   }
   .slider-button {
     position: absolute;
