@@ -26,6 +26,13 @@
     max-width: 392px
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -69,7 +76,7 @@
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     z-index: 5
 .slider
-  max-width: 728px
+  width: 728px
   min-height: 450px
 
   &-button
@@ -91,3 +98,84 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.booking
+  width: 350px
+  padding: 28px
+  border-radius: 8px
+  background: $dark
+  color: $light
+  &__price
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-family: Nunito
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-family: Nunito
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-family: Nunito
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    font-family: Nunito
+    font-size: 12px
+    line-height: 16px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-family: Nunito
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-family: Nunito
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    background-color: $primary
+    font-family: Nunito
+    border-radius: 4px
+    border: none
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: grey
+  border-radius: 4px
