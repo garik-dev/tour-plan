@@ -817,7 +817,7 @@ input:focus {
 }
 
 .map {
-  max-width: 347px;
+  width: 347px;
   min-height: 213px;
   border-radius: 10px;
   overflow: hidden;
@@ -1081,7 +1081,7 @@ input:focus {
     width: 100%;
   }
   .map {
-    min-width: 100%;
+    width: 100%;
   }
   .hotel {
     padding-bottom: 53px;
