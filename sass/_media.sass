@@ -13,7 +13,8 @@
     width: 100%
     min-height: 450px
 @media ( max-width:  992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -50,7 +51,10 @@
     height: 210px
   .map
     width: 340px
-
+  .hotel
+    padding-bottom: 53px
+  .newsletter
+    padding: 70px 0 87px 0
 @media ( max-width:  768px)
   .container
     max-width: 90%
@@ -113,7 +117,19 @@
     width: 100%
   .map
     min-width: 100%
+  .hotel
+    padding-bottom: 53px
+  .newsletter
+    min-height: 320px
+    padding: 76px 0 83px 0
+    &-wrapper
+      flex-direction: column
+      max-width: 90%
+      align-items: flex-start
 @media (max-width:  576px)
+  .newstletter
+    &__title
+      margin: 0
   .rating
     display: none
   .swiper
@@ -130,6 +146,7 @@
     width: 99px
   .hotel
     padding-top: 4px
+    padding-bottom: 60px
     &-description
       padding-bottom: 20px
     &__slider
@@ -156,3 +173,18 @@
       background-position: center
       background-size: 8px
       background-color: transparent
+  .newsletter
+    min-height: 320px
+    padding: 65px 0 83px 0
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+    &__title
+      margin-bottom: 37px
+  .subscribe
+    max-width: 280px
