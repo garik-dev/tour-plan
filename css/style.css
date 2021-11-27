@@ -1048,10 +1048,10 @@ input:focus {
   .container {
     max-width: 960px;
   }
-  .swiper {
+  .swiper-hotel {
     max-width: 590px;
     height: 450px;
-    margin: 0auto;
+    margin: auto;
   }
   .swiper-slide__img {
     height: 100%;
@@ -1104,7 +1104,7 @@ input:focus {
   .hotel__slider {
     margin-bottom: 30px;
   }
-  .swiper {
+  .swiper-hotel {
     max-width: 700px;
   }
   .swiper-slide__img {
@@ -1270,7 +1270,7 @@ input:focus {
   .rating {
     display: none;
   }
-  .swiper {
+  .swiper-hotel {
     width: 100%;
     min-height: 178px;
   }
