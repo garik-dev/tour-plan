@@ -908,12 +908,12 @@ input:focus {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 
 .reviews-button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -929,12 +929,12 @@ input:focus {
 
 .reviews-button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 17px;
 }
 
 .reviews-button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 17px;
 }
 
 .reviews__title {
@@ -1007,7 +1007,7 @@ input:focus {
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: -45px;
-  margin-bottom: 9px;
+  margin-bottom: -7px;
 }
 
 .reviews-slider__username {
@@ -1126,8 +1126,23 @@ input:focus {
   .newsletter {
     padding: 70px 0 87px 0;
   }
-  .reviews-slider__item {
-    max-width: 580px;
+  .reviews {
+    padding: 14px 0 70px 0;
+  }
+  .reviews-button {
+    position: absolute;
+    top: 52%;
+  }
+  .reviews-button--prev {
+    left: 4px;
+  }
+  .reviews-button--next {
+    right: 4px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 55px;
   }
 }
 
@@ -1247,16 +1262,16 @@ input:focus {
     display: none;
   }
   .reviews-button {
-    top: 45px;
+    top: 8%;
   }
   .reviews-button--prev {
-    left: 50%;
+    left: 114px;
     margin-left: -65px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-button--next {
-    right: 50%;
+    right: 114px;
     margin-right: -65px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
@@ -1279,6 +1294,21 @@ input:focus {
   }
   .map {
     width: 100%;
+  }
+  .reviews__title {
+    margin-bottom: 44px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-button {
+    position: absolute;
+    top: 8%;
+  }
+  .reviews-button--prev {
+    left: 114px;
+  }
+  .reviews-button--next {
+    right: 114px;
   }
 }
 
@@ -1326,6 +1356,10 @@ input:focus {
     background-size: 8px;
     background-color: transparent;
   }
+  .swiper-hotel {
+    width: 100%;
+    height: 178px;
+  }
   .newsletter {
     min-height: 320px;
     padding: 65px 0 83px 0;
@@ -1345,6 +1379,24 @@ input:focus {
   }
   .subscribe {
     max-width: 280px;
+  }
+  .reviews {
+    padding: 26px 0 70px 0;
+  }
+  .reviews__title {
+    margin-bottom: 44px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-button {
+    position: absolute;
+    top: 8%;
+  }
+  .reviews-button--prev {
+    left: 114px;
+  }
+  .reviews-button--next {
+    right: 114px;
   }
 }
 /*# sourceMappingURL=style.css.map */
