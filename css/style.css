@@ -1051,7 +1051,7 @@ input:focus {
   .swiper {
     max-width: 590px;
     height: 450px;
-    margin: 0;
+    margin: 0auto;
   }
   .swiper-slide__img {
     height: 100%;
@@ -1304,10 +1304,10 @@ input:focus {
   }
   .swiper {
     width: 100%;
-    height: 178px;
+    min-height: 178px;
   }
   .slider {
-    height: 178px;
+    height: 100%;
   }
   .slider-button {
     position: absolute;
