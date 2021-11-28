@@ -1129,15 +1129,18 @@ input:focus {
   .reviews {
     padding: 14px 0 70px 0;
   }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
   .reviews-button {
     position: absolute;
-    top: 52%;
+    top: 42%;
   }
   .reviews-button--prev {
-    left: 4px;
+    left: 3px;
   }
   .reviews-button--next {
-    right: 4px;
+    right: 3px;
   }
   .reviews__title {
     font-size: 30px;
