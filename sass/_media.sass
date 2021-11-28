@@ -13,6 +13,9 @@
   .slader
     width: 100%
     min-height: 450px
+  .card
+    width: 230px
+    height: 230px
 @media ( max-width:  992px)
   .container,
   .newsletter-wrapper
@@ -71,6 +74,13 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 55px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 339px
+    height: 255px
+    margin-bottom: 20px
 @media ( max-width:  768px)
   .container
     max-width: 90%
@@ -164,7 +174,12 @@
         right: 45%
         margin-right: -65px
         transform: translate(50%, 0)
-
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
 @media (max-width:  576px)
   .newstletter
     &__title
@@ -191,6 +206,8 @@
         left: 25%
       &--next
         right: 25%
+  .card
+    height: 230px
 @media ( min-width: 320px) and (max-width:  576px)
   .container
     max-width: 88%
@@ -268,3 +285,6 @@
     &__item
       width: 100%
       height: 173px
+  .card
+    width: 100%
+    height: 255px
