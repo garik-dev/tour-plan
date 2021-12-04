@@ -1568,6 +1568,7 @@ input:focus, textarea:focus {
     grid-column: 2 / 6;
   }
   .footer__contact-details {
+    width: 539px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
@@ -1596,7 +1597,7 @@ input:focus, textarea:focus {
     padding-left: 0;
   }
   .footer__item--mb {
-    max-width: 539px;
+    width: 100%;
     margin-bottom: 14px;
   }
   .footer__input {
