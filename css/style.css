@@ -1604,6 +1604,12 @@ input:focus, textarea:focus {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
     height: 50px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__message {
+    font-size: 12px;
+    line-height: 15px;
   }
   .footer__button {
     font-weight: bold;
@@ -1756,6 +1762,9 @@ input:focus, textarea:focus {
   .card {
     width: 49%;
     height: 255px;
+  }
+  .footer__item--mb {
+    margin-bottom: 10px;
   }
   .footer__input {
     max-width: 48%;
