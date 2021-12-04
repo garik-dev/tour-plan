@@ -2028,6 +2028,9 @@ input:focus, textarea:focus {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__categories--mobil {
+    margin-bottom: 16px;
+  }
   .footer__legal {
     -ms-grid-row: 3;
     grid-row: 3;
@@ -2040,8 +2043,9 @@ input:focus, textarea:focus {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: 10px;
+    margin-top: 0;
     padding-top: 0;
+    margin-bottom: -28px;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
@@ -2051,11 +2055,30 @@ input:focus, textarea:focus {
     width: 98%;
   }
   .footer__text {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .footer__title--message {
     margin-top: 44px;
     margin-bottom: 0;
+  }
+  .footer__item--mb {
+    margin-bottom: 20px;
+  }
+  .footer__input {
+    margin-bottom: 0px;
+    padding: 8px 23px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__message {
+    min-height: 123px;
+    margin-top: 10px;
+    padding-top: 16px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
