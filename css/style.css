@@ -1568,6 +1568,7 @@ input:focus, textarea:focus {
     grid-column: 2 / 6;
   }
   .footer__contact-details {
+    width: 539px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
@@ -1596,13 +1597,19 @@ input:focus, textarea:focus {
     padding-left: 0;
   }
   .footer__item--mb {
-    max-width: 539px;
+    width: 100%;
     margin-bottom: 14px;
   }
   .footer__input {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
     height: 50px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__message {
+    font-size: 12px;
+    line-height: 15px;
   }
   .footer__button {
     font-weight: bold;
@@ -1755,6 +1762,9 @@ input:focus, textarea:focus {
   .card {
     width: 49%;
     height: 255px;
+  }
+  .footer__item--mb {
+    margin-bottom: 10px;
   }
   .footer__input {
     max-width: 48%;
