@@ -1862,6 +1862,7 @@ input:focus, textarea:focus {
     text-align: left;
   }
   .footer__contact-details {
+    width: 100%;
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
