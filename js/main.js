@@ -19,5 +19,10 @@ var swiperRevievs = new Swiper('.reviews-slider', {
         nextEl: '.reviews-button--next',
         prevEl: '.reviews-button--prev',
     },
-
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function() {
+    console.log("клик по кнопке меню");
+    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+})
