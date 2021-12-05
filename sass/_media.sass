@@ -163,6 +163,7 @@
   body
     padding-top: 78px
   .navbar
+    overflow: hidden
     &__mobile
       &--fixed
         position: fixed
@@ -186,16 +187,24 @@
       right: 0
       bottom: 0
       top: 78px
-      padding-top: 30px
+      padding-top: 15px
       &--visible
         display: block
     &-menu
       flex-direction: column
+      height: 70vh
+      overflow-y: scroll
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        width: 0
       &__item
+        margin-top: 0
         margin-bottom: 20px
         &--mobile
           &--visible
             display: block
+    &__search
+      margin: 0 0 20px 0
   .menu
     &-button
       display: flex
@@ -304,6 +313,10 @@
       max-width: 48%
 
 @media (max-width: 576px)
+  .search
+    &__input
+      width: 300px
+      height: 40px
   .newstletter
     &__title
       margin: 0
@@ -376,6 +389,10 @@
     max-width: 88%
   .logo
     width: 99px
+  .search
+    &__input
+      width: 245px
+      height: 40px
   .hotel
     padding-top: 4px
     padding-bottom: 0
