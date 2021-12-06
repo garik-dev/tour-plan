@@ -1511,6 +1511,9 @@ input:focus, textarea:focus {
   .footer {
     padding-top: 80px;
   }
+  .footer-wrapper {
+    margin-bottom: 56px;
+  }
   .footer__container {
     margin-top: 40px;
   }
@@ -1653,6 +1656,9 @@ input:focus, textarea:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar-bottom {
     display: none;
@@ -1671,7 +1677,7 @@ input:focus, textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70vh;
+    height: 60vh;
     overflow-y: scroll;
     scrollbar-width: none;
   }
@@ -1680,13 +1686,13 @@ input:focus, textarea:focus {
   }
   .navbar-menu__item {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
   }
   .navbar__search {
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
   }
   .menu-button {
     display: -webkit-box;
