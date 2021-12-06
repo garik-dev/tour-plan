@@ -1686,7 +1686,7 @@ input:focus, textarea:focus {
   }
   .navbar-menu__item {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
