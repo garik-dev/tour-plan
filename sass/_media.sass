@@ -96,6 +96,8 @@
     margin-bottom: 20px
   .footer
     padding-top: 80px
+    &-wrapper
+      margin-bottom: 56px
     &__container
       margin-top: 40px
     &-wrapper
@@ -137,7 +139,8 @@
         max-width: 539px
     &__legal
       grid-row: 2 / 3
-      grid-column: 6 / 7
+      grid-column: 4 / 7
+      text-align: left
     &__item
       &--legal
         padding-left: 0
@@ -159,9 +162,52 @@
 @media ( max-width:  768px)
   .container
     max-width: 90%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    overflow: hidden
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 15px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      height: 60vh
+      overflow-y: scroll
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        width: 0
+      &__item
+        margin-top: 0
+        margin-bottom: 0
+        &--mobile
+          &--visible
+            display: block
+    &__search
+      margin: 0 0 16px 0
   .menu
     &-button
       display: flex
@@ -178,6 +224,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
   .hotel
@@ -256,6 +308,7 @@
     width: 49%
     height: 255px
   .footer
+    &-wrapper
     &__item
       &--mb
         margin-bottom: 10px
@@ -263,6 +316,10 @@
       max-width: 48%
 
 @media (max-width: 576px)
+  .search
+    &__input
+      width: 300px
+      height: 40px
   .newstletter
     &__title
       margin: 0
@@ -335,6 +392,10 @@
     max-width: 88%
   .logo
     width: 99px
+  .search
+    &__input
+      width: 245px
+      height: 40px
   .hotel
     padding-top: 4px
     padding-bottom: 0
