@@ -577,14 +577,14 @@ quest"
             <h3 class="footer__title footer__title--message">
               Send us a message
             </h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
-                type="text"
+                type="name"
                 class="input footer__input"
                 placeholder="Your Full Name*"
               />
               <input
-                type="text"
+                type="phone"
                 class="input footer__input"
                 placeholder="Phone Number*"
               />
@@ -625,11 +625,11 @@ quest"
                                 </a>
                                 <h3 class="modal__title modal__title--message">Booking</h3>
                                 <form action="# " class="modal__form">
-                                    <input type="text " class="input modal__input" placeholder="Your Full Name* " />
-                                    <input type="text " class="input modal__input" placeholder="Phone Number* " />
-                                    <input type="text" class="input modal__input" placeholder="Email*" />
+                                    <input type="text" class="input modal__input" placeholder="Your Full Name* " />
+                                    <input type="tel" class="input modal__input" placeholder="Phone Number* " />
+                                    <input type="email" class="input modal__input" placeholder="Email*" />
                                     <textarea class="message modal__message" placeholder="Message "></textarea>
-                                    <button class="button modal__button" type="submit ">Send</button>
+                                    <button class="button modal__button" type="button">Send</button>
                                     <span class="modal__info">* Required Fields</span>
                                 </form>
                             </div>
