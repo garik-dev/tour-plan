@@ -1454,6 +1454,9 @@ textarea:focus {
 
 .modal__input {
   width: 100%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   margin-bottom: 15px;
 }
 
@@ -1461,6 +1464,9 @@ textarea:focus {
   width: 100%;
   min-height: 123px;
   outline: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__info {
@@ -1728,6 +1734,9 @@ textarea:focus {
     font-size: 12px;
     line-height: 15px;
   }
+  .modal__dialog {
+    padding: 33px 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1950,6 +1959,12 @@ textarea:focus {
   .footer__input {
     max-width: 48%;
   }
+  .modal__dialog {
+    padding: 33px 40px;
+  }
+  .modal__button {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2064,6 +2079,10 @@ textarea:focus {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 33px 20px;
   }
 }
 
@@ -2315,6 +2334,19 @@ textarea:focus {
   }
   .footer .bottom__item {
     margin-right: 8px;
+  }
+  .footer .modal__dialog {
+    width: 100%;
+    padding: 33px 20px;
+  }
+  .footer .modal__info {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+    margin-top: 15px;
+  }
+  .footer .button {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
