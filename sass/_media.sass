@@ -18,8 +18,9 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
-      margin-bottom: 0
+      &-group
+        flex-basis: 100%
+        margin-bottom: 0
     &__message
       margin-top: 20px
     &__item
@@ -148,10 +149,11 @@
         width: 100%
         margin-bottom: 14px
     &__input
-      flex-basis: 48%
-      height: 50px
-      font-size: 12px
-      line-height: 15px
+      &-group
+        flex-basis: 48%
+        height: 50px
+        font-size: 12px
+        line-height: 15px
     &__message
       font-size: 12px
       line-height: 15px
@@ -315,7 +317,9 @@
       &--mb
         margin-bottom: 10px
     &__input
-      max-width: 48%
+      width: 100%
+      &-group
+        max-width: 48%
   .modal
     &__dialog
       padding: 33px 40px
@@ -394,8 +398,9 @@
         grid-column: 1
         width: 98%
     &__input
-      flex-basis: 100%
-      max-width: 100%
+      width: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
       width: 90%
@@ -522,6 +527,7 @@
       grid-column: 1
       text-align: left
     &__contact
+      width: 100%
       &-details
         grid-row: 6
         grid-column: 1
@@ -542,19 +548,19 @@
       &--mb
         margin-bottom: 20px
     &__input
-      order: -3
       width: 100%
-      min-height: 50px
-      margin-top: 12px
-      margin-bottom: 10px
-      padding: 8px 23px
-      background-color: $light
-      border-radius: 4px
-      border: none
-      font-size: 12px
-      line-height: 15px
+      &__group
+        flex-basis: 100%
+        min-height: 50px
+        margin-top: 12px
+        margin-bottom: 10px
+        padding: 8px 23px
+        background-color: $light
+        border-radius: 4px
+        border: none
+        font-size: 12px
+        line-height: 15px
     &__message
-      order: -3
       width: 100%
       min-height: 123px
       margin-top: 10px
