@@ -1962,6 +1962,11 @@ textarea:focus {
   .modal__dialog {
     padding: 33px 40px;
   }
+  .modal__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .modal__button {
     margin-bottom: 15px;
   }
@@ -2346,20 +2351,26 @@ textarea:focus {
 
 @media (max-height: 640px) {
   .modal__dialog {
+    position: fixed;
     width: 92%;
-    max-height: 420px;
+    max-height: 100vh;
     padding: 16px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .modal__dialog::-webkit-scrollbar {
+    width: 0;
   }
   .modal__title {
     font-size: 16px;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
   .modal__input {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
     height: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
   .modal__input--landscape {
     -ms-flex-preferred-size: 100%;
@@ -2368,7 +2379,7 @@ textarea:focus {
   .modal__message {
     min-height: 80px;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
   .modal__button {
     width: 100%;

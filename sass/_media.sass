@@ -319,6 +319,8 @@
   .modal
     &__dialog
       padding: 33px 40px
+    &__form
+      align-items: center
     &__button
       margin-bottom: 15px
 
@@ -582,23 +584,28 @@
 @media (max-height: 640px)
   .modal
     &__dialog
+      position: fixed
       width: 92%
-      max-height: 420px
+      max-height: 100vh
       padding: 16px
+      overflow-y: scroll
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        width: 0
     &__title
       font-size: 16px
       padding: 0
-      margin-bottom: 8px
+      margin-bottom: 15px
     &__input
       flex-basis: 48%
       height: 40px
-      margin-bottom: 8px
+      margin-bottom: 15px
       &--landscape
         flex-basis: 100%
     &__message
       min-height: 80px
       margin-top: 0
-      margin-bottom: 8px
+      margin-bottom: 15px
     &__button
       width: 100%
       margin-top: 0
