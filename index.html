@@ -191,9 +191,9 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form class="subscribe newsletter__search" action="#">
-                <input class="subscribe__input" type="text" placeholder="Your email address" />
-                <button class="subscribe__button">Send</button>
+            <form class="subscribe newsletter__search" action="send.php" method="POST">
+                <input class="subscribe__input" type="email" placeholder="Your email address" required />
+                <button class="button subscribe__button" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -397,7 +397,7 @@ of chamarel"
               The curious corner<br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -410,7 +410,7 @@ course"
               Gymkhana club golf<br />
               course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -425,7 +425,7 @@ trip - full day
               Tamarind falls hiking<br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -435,7 +435,7 @@ trip - full day
 quest"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
       </div>
