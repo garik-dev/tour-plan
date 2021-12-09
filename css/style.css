@@ -1327,7 +1327,6 @@ textarea:focus {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   margin-top: 20px;
-  margin-bottom: 15px;
 }
 
 .footer__message {
@@ -1335,6 +1334,7 @@ textarea:focus {
       flex-basis: 100%;
   min-height: 123px;
   resize: none;
+  margin-top: 20px;
   margin-bottom: 23px;
 }
 
@@ -1969,7 +1969,7 @@ textarea:focus {
     width: 100%;
   }
   .footer__input-group {
-    max-width: 48%;
+    max-width: 100%;
   }
   .modal__dialog {
     padding: 33px 40px;
@@ -2043,6 +2043,12 @@ textarea:focus {
         -ms-flex-order: 1;
             order: 1;
   }
+  .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
+    width: 100%;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2091,13 +2097,6 @@ textarea:focus {
     -ms-grid-column: 1;
     grid-column: 1;
     width: 98%;
-  }
-  .footer__input {
-    width: 100%;
-  }
-  .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
   .modal__dialog {
     width: 90%;
@@ -2303,9 +2302,6 @@ textarea:focus {
     margin-top: 44px;
     margin-bottom: 0;
   }
-  .footer__item--mb {
-    margin-bottom: 20px;
-  }
   .footer__input {
     width: 100%;
   }
@@ -2325,8 +2321,8 @@ textarea:focus {
   .footer__message {
     width: 100%;
     min-height: 123px;
-    margin-top: 10px;
-    margin-bottom: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 16px;
     font-size: 12px;
     line-height: 15px;
