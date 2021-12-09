@@ -399,6 +399,15 @@ textarea:focus {
   color: #ffffff;
 }
 
+.button:hover {
+  background-color: #0A223D;
+  border: 1px solid #ffffff;
+}
+
+.invalid {
+  color: #EC1F46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -520,6 +529,10 @@ textarea:focus {
   color: #333333;
 }
 
+.user__name:hover {
+  color: #EC1F46;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,6 +558,10 @@ textarea:focus {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.breadcrumb-list__link:hover {
+  color: #EC1F46;
 }
 
 .hotel {
@@ -1174,6 +1191,11 @@ textarea:focus {
   cursor: pointer;
 }
 
+.card__button:hover {
+  background-color: #0A223D;
+  border: 1px solid #ffffff;
+}
+
 .footer {
   background-color: #0A223D;
   color: #ffffff;
@@ -1316,10 +1338,13 @@ textarea:focus {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .footer__message {
@@ -1327,6 +1352,7 @@ textarea:focus {
       flex-basis: 100%;
   min-height: 123px;
   resize: none;
+  margin-top: 15px;
   margin-bottom: 23px;
 }
 
@@ -1457,7 +1483,7 @@ textarea:focus {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
@@ -1467,6 +1493,7 @@ textarea:focus {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1512,7 +1539,7 @@ textarea:focus {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 0;
@@ -1526,6 +1553,21 @@ textarea:focus {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-menu__link:hover {
+    color: #EC1F46;
+  }
+  .search__button:hover {
+    background-color: #0A223D;
+  }
+  .footer__link:hover {
+    color: #EC1F46;
+  }
+  .bottom__link:hover {
+    color: #EC1F46;
   }
 }
 
@@ -1718,7 +1760,7 @@ textarea:focus {
     width: 100%;
     margin-bottom: 14px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
     height: 50px;
@@ -1957,7 +1999,10 @@ textarea:focus {
     margin-bottom: 10px;
   }
   .footer__input {
-    max-width: 48%;
+    width: 100%;
+  }
+  .footer__input-group {
+    max-width: 100%;
   }
   .modal__dialog {
     padding: 33px 40px;
@@ -2031,6 +2076,25 @@ textarea:focus {
         -ms-flex-order: 1;
             order: 1;
   }
+  .footer__input {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    width: 100%;
+  }
+  .footer__input-group {
+    width: 100%;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2079,11 +2143,6 @@ textarea:focus {
     -ms-grid-column: 1;
     grid-column: 1;
     width: 98%;
-  }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    max-width: 100%;
   }
   .modal__dialog {
     width: 90%;
@@ -2263,6 +2322,9 @@ textarea:focus {
     grid-column: 1;
     text-align: left;
   }
+  .footer__contact {
+    width: 100%;
+  }
   .footer__contact-details {
     -ms-grid-row: 6;
     grid-row: 6;
@@ -2286,14 +2348,12 @@ textarea:focus {
     margin-top: 44px;
     margin-bottom: 0;
   }
-  .footer__item--mb {
-    margin-bottom: 20px;
-  }
   .footer__input {
-    -webkit-box-ordinal-group: -2;
-        -ms-flex-order: -3;
-            order: -3;
     width: 100%;
+  }
+  .footer__input__group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     min-height: 50px;
     margin-top: 12px;
     margin-bottom: 10px;
@@ -2305,13 +2365,10 @@ textarea:focus {
     line-height: 15px;
   }
   .footer__message {
-    -webkit-box-ordinal-group: -2;
-        -ms-flex-order: -3;
-            order: -3;
     width: 100%;
     min-height: 123px;
-    margin-top: 10px;
-    margin-bottom: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 16px;
     font-size: 12px;
     line-height: 15px;

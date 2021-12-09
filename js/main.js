@@ -45,6 +45,39 @@ $(document).ready(function() {
         var modalDialog = $('.modal__dialog');
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
-
     }
+    //обработка формы
+    $(".modal__form").validate({
+        errorClass: "invalid",
+        messages: {
+            name: {
+                required: "Please specify your name",
+                minlength: "Name must be at least 2 letters long"
+            },
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com",
+            },
+            phone: {
+                required: "Phone is required",
+            },
+        },
+    });
+
+    $(".footer__form").validate({
+        errorClass: "invalid",
+        messages: {
+            name: {
+                required: "Please specify your name",
+                minlength: "Name must be at least 2 letters long"
+            },
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com",
+            },
+            phone: {
+                required: "Phone is required",
+            },
+        },
+    });
 });

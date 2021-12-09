@@ -191,9 +191,9 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form class="subscribe newsletter__search" action="#">
-                <input class="subscribe__input" type="text" placeholder="Your email address" />
-                <button class="subscribe__button">Send</button>
+            <form class="subscribe newsletter__search" action="send.php" method="POST">
+                <input class="subscribe__input" type="email" placeholder="Your email address" required />
+                <button class="button subscribe__button" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -397,7 +397,7 @@ of chamarel"
               The curious corner<br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -410,7 +410,7 @@ course"
               Gymkhana club golf<br />
               course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -425,7 +425,7 @@ trip - full day
               Tamarind falls hiking<br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card">
             <img
@@ -435,7 +435,7 @@ trip - full day
 quest"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
       </div>
@@ -577,19 +577,29 @@ quest"
             <h3 class="footer__title footer__title--message">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-              />
-              <input
-                type="tel"
-                class="input footer__input"
-                placeholder="Phone Number*"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
+                name="message"
                 placeholder="Message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
@@ -624,18 +634,19 @@ quest"
                                     <img src="img/close.svg" alt="Icon: close" />
                                 </a>
                                 <h3 class="modal__title modal__title--message">Booking</h3>
-                                <form action="# " class="modal__form">
-                                    <input type="text" class="input modal__input" placeholder="Your Full Name* " />
-                                    <input type="tel" class="input modal__input" placeholder="Phone Number* " />
-                                    <input type="email" class="input modal__input modal__input--landscape" placeholder="Email*" />
-                                    <textarea class="message modal__message" placeholder="Message "></textarea>
-                                    <button class="button modal__button" type="button">Send</button>
+                                <form action="send.php" method="POST" class="modal__form form">
+                                    <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+                                    <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+                                    <input type="email" class="input modal__input modal__input--landscape" placeholder="Email*" name="email" required />
+                                    <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+                                    <button class="button modal__button" type="submit">Send</button>
                                     <span class="modal__info">* Required Fields</span>
                                 </form>
                             </div>
                         </div>
                         <script src="js/jquery-3.6.0.min.js"></script>
                         <script src="js/swiper-bundle.min.js "></script>
+                        <script src="js/jquery.validate.min.js"></script>
                         <script src="js/main.js "></script>
 </body>
 
