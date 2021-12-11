@@ -1550,20 +1550,45 @@ textarea:focus {
   .navbar-menu__link:hover {
     color: #EC1F46;
   }
+  .navbar-menu__link:active {
+    color: #F5FAFE;
+  }
   .search__button:hover {
     background-color: #0A223D;
+  }
+  .search__button:active {
+    color: #F5FAFE;
   }
   .footer__link:hover {
     color: #EC1F46;
   }
+  .footer__link:active {
+    color: #F5FAFE;
+  }
   .bottom__link:hover {
     color: #EC1F46;
+  }
+  .bottom__link:active {
+    color: #F5FAFE;
   }
   .user__name:hover {
     color: #EC1F46;
   }
+  .user__name:active {
+    color: #F5FAFE;
+  }
+  .breadcrumb-list__link:hover {
+    color: #EC1F46;
+  }
+  .breadcrumb-list__link:active {
+    color: #F5FAFE;
+  }
   button:hover {
     background-color: #0A223D;
+    border: 1px solid #ffffff;
+  }
+  button:active {
+    background-color: #F5FAFE;
     border: 1px solid #ffffff;
   }
 }
