@@ -34,14 +34,17 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+  &__search
+    margin-bottom: 40px
 .subscribe
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
+
   &__input
     position: absolute
+    right: 0
+    top: 0
     width: 100%
     height: 100%
     border: none
@@ -50,13 +53,16 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
   &__button
     position: absolute
+    padding: 18px 10px
     min-width: 65px
     right: 0
-    top: 0
+    top: 20px
     height: 100%
     border: none
+    border-radius: 0 4px 4px 0
     background-color: $primary
     color: $light
     cursor: pointer

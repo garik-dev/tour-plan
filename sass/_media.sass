@@ -25,7 +25,7 @@
       margin-top: 20px
     &__item
       &--legal
-        padding-left: 16%
+        padding-left: 0
     &__input
       flex-basis: 100%
 @media ( min-width:  992px)
@@ -34,18 +34,47 @@
       &__link
         &:hover
           color: $primary
+        &:active
+          color: $secondary
   .search
     &__button
       &:hover
         background-color: $dark
+      &:active
+        color: $secondary
   .footer
     &__link
       &:hover
         color: $primary
+      &:active
+        color: $secondary
   .bottom
     &__link
       &:hover
         color: $primary
+      &:active
+        color: $secondary
+  .user
+    &__name
+      &:hover
+        color: $primary
+      &:active
+        color: $secondary
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: $primary
+        &:active
+          color: $secondary
+
+  button
+    &:hover
+      background-color: $dark
+      border: 1px solid $light
+    &:active
+      background-color: $secondary
+      border: 1px solid $light
 
 @media ( max-width:  992px)
   .activities
@@ -121,7 +150,7 @@
     &__container
       margin-top: 40px
     &-wrapper
-      grid-template-columns: repeat ( 7, 1fr )
+      grid-template-columns: repeat ( 6, 1fr )
       column-gap: 30px
     &__logo
       grid-row: 1 / 2
@@ -558,7 +587,7 @@
         grid-column: 1
         margin-top: 0
         padding-top: 0
-        margin-bottom: -28px
+        margin-bottom: 0
       &-form
         grid-row: 7
         grid-column: 1
