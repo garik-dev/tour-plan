@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -19,7 +20,13 @@
     <header class="navbar navbar--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a class="logo" href="#">
+          <a
+            class="logo"
+            href="#"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="logo__image"
               src="img/horizontal-logo.svg"
@@ -41,7 +48,13 @@
             </button>
           </form>
 
-          <a class="user navbar__user navbar__user--mobile--hidden" href="#">
+          <a
+            class="user navbar__user navbar__user--mobile--hidden"
+            href="#"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="user__avatar"
               src="img/user-avatar.jpg"
@@ -262,7 +275,12 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-sine"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -270,6 +288,9 @@
           class="subscribe newsletter__search"
           action="send.php"
           method="POST"
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-sine"
         >
           <input
             class="subscribe__input"
@@ -284,7 +305,14 @@
     </section>
     <div class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2
+          class="reviews__title"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-sine"
+        >
+          What people think about us
+        </h2>
         <!-- Slider main container -->
         <div class="swiper reviews-slider">
           <!-- Additional required wrapper -->
@@ -474,9 +502,21 @@
     </div>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2
+          class="activities__title"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-1.jpg"
@@ -489,7 +529,12 @@ of chamarel"
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-2.jpg"
@@ -502,7 +547,12 @@ course"
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-3.jpg"
@@ -517,7 +567,12 @@ trip - full day
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-delay="800"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-4.jpg"
@@ -621,8 +676,13 @@ quest"
               </li>
             </ul>
           </div>
-          <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--cd">Contact Details</h3>
+          <div
+            class="footer__contact-details"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3>Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -667,7 +727,14 @@ quest"
             <h3 class="footer__title footer__title--message">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form form">
+            <form
+              action="send.php"
+              method="POST"
+              class="footer__form form"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="footer__input-group">
                 <input
                   type="text"
@@ -771,6 +838,7 @@ quest"
     <script src="js/swiper-bundle.min.js "></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js "></script>
   </body>
 </html>
