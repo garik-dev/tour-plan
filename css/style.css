@@ -401,10 +401,12 @@ textarea:focus {
 
 .invalid {
   color: #EC1F46;
+  font-size: 15px;
 }
 
 #email-error {
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .navbar {
@@ -956,7 +958,7 @@ textarea:focus {
   padding: 18px 10px;
   min-width: 65px;
   right: 0;
-  top: 20px;
+  top: 15px;
   height: 100%;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -1334,7 +1336,10 @@ textarea:focus {
 .footer__input-group {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .footer__message {
@@ -1342,7 +1347,6 @@ textarea:focus {
       flex-basis: 100%;
   min-height: 123px;
   resize: none;
-  margin-top: 15px;
   margin-bottom: 23px;
 }
 
@@ -1470,6 +1474,11 @@ textarea:focus {
 
 .modal__input {
   width: 100%;
+}
+
+.modal__input-group {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1490,7 +1499,7 @@ textarea:focus {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #E0E0E0;
+  color: #ffffff;
 }
 
 .modal__form {
@@ -2443,12 +2452,15 @@ textarea:focus {
   .modal__title {
     font-size: 16px;
     padding: 0;
+    margin-top: 0;
     margin-bottom: 15px;
   }
   .modal__input {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-    height: 40px;
+  }
+  .modal__input-group {
+    margin-top: 0;
     margin-bottom: 15px;
   }
   .modal__input--landscape {
