@@ -1,6 +1,7 @@
 @media ( max-width:  1200px)
   .container
     max-width: 960px
+    width: 92%
   .swiper
     &-hotel
       max-width: 590px
@@ -17,6 +18,8 @@
     width: 230px
     height: 230px
   .footer
+    &-wrapper
+      grid-template-columns: minmax(120px, 190px) repeat(3, minmax(200px,1fr))
     &__input
       &-group
         flex-basis: 100%

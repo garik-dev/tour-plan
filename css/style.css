@@ -1267,7 +1267,7 @@ textarea:focus {
 
 .footer__contact-details {
   grid-column: span 2;
-  padding-top: 20px;
+  padding-top: 0;
   margin-bottom: 10px;
 }
 
@@ -1302,6 +1302,15 @@ textarea:focus {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 23px;
+}
+
+.footer__title--contact {
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
 }
 
 .footer__item {
@@ -1528,6 +1537,7 @@ textarea:focus {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    width: 92%;
   }
   .swiper-hotel {
     max-width: 590px;
@@ -1546,6 +1556,10 @@ textarea:focus {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: minmax(120px, 190px) (minmax(200px, 1fr))[3];
+        grid-template-columns: minmax(120px, 190px) repeat(3, minmax(200px, 1fr));
   }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
