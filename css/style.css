@@ -470,6 +470,7 @@ textarea:focus {
 
 .logo {
   width: 177px;
+  overflow: hidden;
 }
 
 .search {
@@ -477,7 +478,6 @@ textarea:focus {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  overflow: hidden;
   height: 40px;
   border-radius: 6px;
 }
@@ -513,6 +513,7 @@ textarea:focus {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .user__avatar {
@@ -909,6 +910,7 @@ textarea:focus {
           justify-content: space-between;
   max-width: 731px;
   margin: auto;
+  overflow: hidden;
 }
 
 .newsletter-title {
