@@ -578,6 +578,9 @@ textarea:focus {
 .hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .hotel-info__offer {
@@ -588,11 +591,6 @@ textarea:focus {
 .hotel-info__description {
   margin: 0;
   max-width: 100%;
-}
-
-.hotel-name {
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .hotel-wrapper {
@@ -1267,7 +1265,7 @@ textarea:focus {
 
 .footer__contact-details {
   grid-column: span 2;
-  padding-top: 0;
+  padding-top: -4px;
   margin-bottom: 10px;
 }
 
@@ -1297,7 +1295,7 @@ textarea:focus {
 }
 
 .footer__title {
-  margin: 0 0 16px;
+  margin: 4px 0 16px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
@@ -1305,12 +1303,7 @@ textarea:focus {
 }
 
 .footer__title--contact {
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .footer__item {
@@ -1336,7 +1329,7 @@ textarea:focus {
 }
 
 .footer__text {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
@@ -1681,11 +1674,20 @@ textarea:focus {
     width: 340px;
     height: 210px;
   }
+  .booking__button {
+    padding: 8px;
+  }
   .hotel {
     padding-bottom: 53px;
   }
   .newsletter {
     padding: 70px 0 87px 0;
+  }
+  .newsletter__search {
+    margin-top: 18px;
+  }
+  .newsletter-wrapper {
+    width: 92%;
   }
   .reviews {
     padding: 14px 0 46px 0;
@@ -1743,8 +1745,8 @@ textarea:focus {
     width: 98px;
     margin-top: 0;
   }
-  .footer__title {
-    margin-top: 20px;
+  .footer__title--message {
+    margin-top: 0;
   }
   .footer__title--sn {
     margin-top: 0;
@@ -1760,7 +1762,7 @@ textarea:focus {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-left: -130px;
+    margin-left: -150px;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1781,13 +1783,14 @@ textarea:focus {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    margin-top: 50px;
+    margin-top: -4px;
   }
   .footer__contact-form {
     grid-column: span 4;
     -ms-grid-row: 4;
     grid-row: 4;
     max-width: 539px;
+    margin-top: -10px;
   }
   .footer__legal {
     -ms-grid-row: 2;
@@ -1985,6 +1988,9 @@ textarea:focus {
   .booking {
     width: 100%;
   }
+  .booking__button {
+    padding: 8px;
+  }
   .map {
     width: 100%;
     height: 213px;
@@ -2144,6 +2150,9 @@ textarea:focus {
     width: 300px;
     height: 40px;
   }
+  .newstletter-wrapper {
+    width: 90%;
+  }
   .newstletter__title {
     margin: 0;
   }
@@ -2217,6 +2226,10 @@ textarea:focus {
         -ms-flex-order: 1;
             order: 1;
   }
+  .footer-wrapper {
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+  }
   .footer__logo {
     -ms-grid-row: 1;
     grid-row: 1;
@@ -2270,7 +2283,7 @@ textarea:focus {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .container {
-    max-width: 88%;
+    max-width: 90%;
   }
   .logo {
     width: 99px;
@@ -2335,7 +2348,7 @@ textarea:focus {
     line-height: 38px;
   }
   .newsletter__title {
-    margin-bottom: 37px;
+    margin-bottom: 10px;
   }
   .subscribe {
     max-width: 280px;
@@ -2381,6 +2394,9 @@ textarea:focus {
     line-height: 23px;
     margin-bottom: 36px;
   }
+  .activities__title--contact {
+    margin-top: 0;
+  }
   .card {
     width: 100%;
     height: 255px;
@@ -2391,8 +2407,8 @@ textarea:focus {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 10px;
-    margin-bottom: 22px;
+    grid-gap: 30px;
+    margin-bottom: 0;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2442,6 +2458,7 @@ textarea:focus {
   }
   .footer__contact {
     width: 100%;
+    margin-top: 0;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -2458,12 +2475,17 @@ textarea:focus {
     -ms-grid-column: 1;
     grid-column: 1;
     width: 98%;
+    margin-top: 40px;
   }
   .footer__text {
     margin-bottom: 20px;
   }
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
   .footer__title--message {
-    margin-top: 44px;
+    margin-top: 0;
     margin-bottom: 0;
   }
   .footer__input {
@@ -2475,7 +2497,7 @@ textarea:focus {
     min-height: 50px;
     margin-top: 12px;
     margin-bottom: 10px;
-    padding: 8px 23px;
+    padding: 18px 23px;
     background-color: #ffffff;
     border-radius: 4px;
     border: none;
@@ -2484,7 +2506,7 @@ textarea:focus {
   }
   .footer__message {
     width: 100%;
-    min-height: 123px;
+    min-height: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 16px;
@@ -2504,7 +2526,7 @@ textarea:focus {
             align-items: flex-start;
   }
   .footer__info {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .bottom__list {
     margin-bottom: 10px;
@@ -2520,7 +2542,7 @@ textarea:focus {
     margin-top: 15px;
   }
   .button {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 }
 

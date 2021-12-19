@@ -18,7 +18,7 @@
     <header class="navbar navbar--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a class="logo" href="#">
+                <a class="logo" href="#" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     <img class="logo__image" src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" />
                 </a>
 
@@ -29,7 +29,7 @@
             </button>
                 </form>
 
-                <a class="user navbar__user navbar__user--mobile--hidden" href="#">
+                <a class="user navbar__user navbar__user--mobile--hidden" href="#" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan" />
                     <span class="user__name">Nathan</span>
                 </a>
@@ -107,94 +107,98 @@
                             <img src="img/star.svg" alt="star" />
                             <img src="img/star.svg" alt="star" />
                         </div>
-                        <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
-                        <span class="offer hotel-info__offer">Flash Offer</span>
-                    </div>
-                    <p class="hotel-description hotel-info__description">
-                        Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
-                    </p>
-                </div>
-                <div class="rating hotel-info__rating">
-                    <span class="rating__text">User Rattings</span>
-                    <span class="rating__counter">4.5/<span class="rating__counter-small">5</span></span>
-                </div>
+                        <h1 class="hotel-name hotel-info__name" data-aos="fade-up" data-aos-duration="1000">
+                            Grand Hilton Hotel
+                        </h1>
+                        <span class="offer hotel-info__offer" data-aos="fade-up" data-aos-duration="1000">Flash Offer</span
+              >
             </div>
-            <div class="hotel-grid">
-                <div class="slider hotel__slider">
-                    <!-- Slider main container -->
-                    <div class="swiper swiper-hotel">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/slide-1.jpg" alt="slide" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/slide-2.jpg" alt="slide" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/slide-3.jpg" alt="slide" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/slide-4.jpg" alt="slide" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/slide-5.jpg" alt="slide" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="img/side-6.jpg" alt="slide" />
-                            </div>
-                        </div>
-
-                        <!-- If we need navigation buttons -->
-                        <button class="slider-button slider-button--prev"></button>
-                        <button class="slider-button slider-button--next"></button>
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+              Free
+            </p>
+          </div>
+          <div class="rating hotel-info__rating">
+            <span class="rating__text">User Rattings</span>
+                        <span class="rating__counter">4.5/<span class="rating__counter-small">5</span></span>
                     </div>
                 </div>
-                <div class="hotel-right">
-                    <div class="booking">
-                        <div class="booking__info">
-                            <div class="booking__price">
-                                <span class="booking__start">price starts as</span>
-                                <strong class="booking__pricetag">$ 8,500</strong>
-                                <span class="booking__per-room">per room / night</span>
-                            </div>
-                            <div class="booking__room">
-                                <div class="booking__text">
-                                    <img class="booking__icon" src="img/user.svg" alt="Icon: user" />
-                                    <span class="booking__description">2 x Guests</span>
+                <div class="hotel-grid">
+                    <div class="slider hotel__slider">
+                        <!-- Slider main container -->
+                        <div class="swiper swiper-hotel">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/slide-1.jpg" alt="slide" />
                                 </div>
-                                <div class="booking__text">
-                                    <img class="booking__icon" src="img/home.svg" alt="Icon: home" />
-                                    <span class="booking__description">1 x Room</span>
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/slide-2.jpg" alt="slide" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/slide-3.jpg" alt="slide" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/slide-4.jpg" alt="slide" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/slide-5.jpg" alt="slide" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-slide__img" src="img/side-6.jpg" alt="slide" />
                                 </div>
                             </div>
+
+                            <!-- If we need navigation buttons -->
+                            <button class="slider-button slider-button--prev"></button>
+                            <button class="slider-button slider-button--next"></button>
                         </div>
-                        <div class="booking__call-center">
-                            <div class="booking__heading">Quick Booking</div>
-                            <a class="booking__number" href="tel:12100">
-                                <img src="img/phone-call.svg" alt="Icon: phone" />
-                                <span class="booking__num">12100</span>
-                            </a>
-                        </div>
-                        <button data-toggle="modal" class="button booking__button">
+                    </div>
+                    <div class="hotel-right">
+                        <div class="booking">
+                            <div class="booking__info">
+                                <div class="booking__price">
+                                    <span class="booking__start">price starts as</span>
+                                    <strong class="booking__pricetag">$ 8,500</strong>
+                                    <span class="booking__per-room">per room / night</span>
+                                </div>
+                                <div class="booking__room">
+                                    <div class="booking__text">
+                                        <img class="booking__icon" src="img/user.svg" alt="Icon: user" />
+                                        <span class="booking__description">2 x Guests</span>
+                                    </div>
+                                    <div class="booking__text">
+                                        <img class="booking__icon" src="img/home.svg" alt="Icon: home" />
+                                        <span class="booking__description">1 x Room</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking__call-center">
+                                <div class="booking__heading">Quick Booking</div>
+                                <a class="booking__number" href="tel:12100">
+                                    <img src="img/phone-call.svg" alt="Icon: phone" />
+                                    <span class="booking__num">12100</span>
+                                </a>
+                            </div>
+                            <button data-toggle="modal" class="button booking__button">
                 View Other Optionsv
               </button>
-                    </div>
-                    <div class="map">
-                        <iframe class="map__item" style="border: none; border-radius: 10px" src="https://www.google.com/maps/d/embed?mid=1_qlUe9t7kOMXHR8IULKhGrCVxq6rfnw0&hl=ru" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
+                        </div>
+                        <div class="map">
+                            <iframe class="map__item" style="border: none; border-radius: 10px" src="https://www.google.com/maps/d/embed?mid=1_qlUe9t7kOMXHR8IULKhGrCVxq6rfnw0&hl=ru" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="newsletter">
         <div class="newsletter-wrapper">
-            <h2 class="newsletter-title newsletter__title">
+            <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form class="subscribe newsletter__search" action="send.php" method="POST">
+            <form class="subscribe newsletter__search" action="send.php" method="POST" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <input class="subscribe__input" id="email-error" type="email" placeholder="Your email address" required />
                 <button class="button subscribe__button" type="submit">Send</button>
             </form>
@@ -202,7 +206,9 @@
     </section>
     <div class="reviews">
         <div class="container">
-            <h2 class="reviews__title">What people think about us</h2>
+            <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="1000">
+                What people think about us
+            </h2>
             <!-- Slider main container -->
             <div class="swiper reviews-slider">
                 <!-- Additional required wrapper -->
@@ -387,9 +393,20 @@
     </div>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2
+          class="activities__title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="200"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-1.jpg"
@@ -402,7 +419,12 @@ of chamarel"
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-2.jpg"
@@ -415,7 +437,12 @@ course"
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-3.jpg"
@@ -430,7 +457,12 @@ trip - full day
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="card__image"
               src="img/activity-4.jpg"
@@ -535,7 +567,7 @@ quest"
             </ul>
           </div>
           <div class="footer__contact-details">
-            <h3 class="footer__titte footer__title--contact">
+            <h3 class="footer__title footer__title--contact">
               Contact Details
             </h3>
             <p class="footer__text">
